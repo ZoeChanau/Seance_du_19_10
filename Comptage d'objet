@@ -1,0 +1,13 @@
+def comptage(elements):
+    result = {}
+    for i in elements:
+        result[i]  = elements.count(i)
+               
+    return result
+    
+test_list = list('AAABBC')
+result = comptage(test_list)
+
+assert result['A'] == 3
+assert result['B'] == 2
+assert result['C'] == 1
